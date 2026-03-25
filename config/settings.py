@@ -90,7 +90,7 @@ WSGI_APPLICATION = "config.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("NAME"),
+        "NAME": 'habit_tracker',
         "USER": os.getenv("USER"),
         "PASSWORD": os.getenv("password"),
         "HOST": os.getenv("host"),

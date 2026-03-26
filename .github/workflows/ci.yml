@@ -73,10 +73,10 @@ jobs:
 
       - name: Run tests
         env:
-          SECRET_KEY: 'testing-secret-key'
-          POSTGRES_DB: test_db
-          POSTGRES_USER: test_user
-          POSTGRES_PASSWORD: test_password
+          SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+          POSTGRES_DB: habit_tracker
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: 123456
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
         run: python manage.py test

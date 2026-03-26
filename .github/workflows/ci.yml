@@ -73,7 +73,7 @@ jobs:
 
       - name: Run tests
         env:
-          SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+          SECRET_KEY: django-insecure-tbor13j*p++7ci!w*aj7%-l!(=1q*%c5=mhoxf-8wx-5%0asly
           POSTGRES_DB: habit_tracker
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 123456

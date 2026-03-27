@@ -77,7 +77,7 @@ jobs:
           POSTGRES_DB: habit_tracker
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 123456
-          POSTGRES_HOST: postgres_db
+          POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
         run: python manage.py test
 

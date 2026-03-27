@@ -92,8 +92,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": 'habit_tracker',
         "USER": 'postgres',
-        "PASSWORD": os.getenv("password"),
-        "HOST": os.getenv("host"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": os.getenv("POSTGRES_HOST"),
         "PORT": "5432",
         "OPTIONS": {"client_encoding": "UTF8"},
     }
